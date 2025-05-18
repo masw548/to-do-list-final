@@ -1,0 +1,70 @@
+body{
+    background: #F5F5DC url(../img/background.jpg) repeat-y ;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ...................search box...................... */
+.search-box {
+    position: relative;
+    display: inline-block;
+    border: 1px solid;
+    height: 30px;
+}
+.search-box input {
+    padding-left: 30px; 
+}
+.search-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+/* ..................end search box.................... */
+/* ...................start note....................... */
+.delbtn{
+    font-size: 1rem;
+    color: #000;
+    background:rgba(236, 49, 49, 0);
+    border: none;
+    border-radius: 5px;
+    margin:  5px;
+}
+.editbtn{
+    color: #000;
+    border: none;
+    background:rgba(17, 85, 153, 0);
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1rem;
+}
+.statebtn{
+    color: #fff;
+    border:none;
+    background:#198754;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.note{
+    font-size: 2rem;
+    color: #000;
+}
+.newnote{
+    border-radius: 15px;
+    padding: 10px;
+    margin: 1%;
+    width: 48%;
+    display: inline-block;
+}
+
+.lastupdate{
+    font-size: 0.75rem;
+}
+
+/* ......................end note........................ */
+/* .....................media quary...................... */
+@media only screen and (max-width:768px){
+    .newnote{width:100%;}   
+}
