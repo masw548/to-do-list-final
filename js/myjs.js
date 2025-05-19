@@ -106,3 +106,10 @@ input.addEventListener('keydown',(e)=>{
 })
 // seartch note
 seartchInput.addEventListener('input',showout)
+
+// let text erea on mobile screen beeing taller when user enter a long text
+input.addEventListener('input',function(){
+    this.style.height = 'auto'
+    this.style.height = this.scrollHeight + 'px'
+})
+
