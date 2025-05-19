@@ -102,6 +102,10 @@ function togglestatue(obj){
 // enter pressing
 input.addEventListener('keydown',(e)=>{
     if(e.key === 'Enter'){
+    textarea.style.height = "auto"; 
+    textarea.style.height = textarea.scrollHeight + "px"; 
+});
+
         this.style.height = '50px';
         save()
     }
