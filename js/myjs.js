@@ -14,12 +14,13 @@ showout()
 btnSave.addEventListener('click',save)
 function save() {
     let note = input.value.trim();
-    input.value = ''
     if(note){
         arr.push({text : note, date : new Date().toLocaleString() , complete : false })
         localStorage.setItem('notes',JSON.stringify(arr))
         showout()
     }
+    input.value = ''
+    input.style.height = '50px';
 }
 function showout() {
     output.innerHTML=''
@@ -111,8 +112,5 @@ seartchInput.addEventListener('input',showout)
 input.addEventListener('input',function(){
     this.style.height = 'auto'
     this.style.height = this.scrollHeight + 'px';
-    if(this.value.trim()===""){
-        this.style.height = '50px';
-    }
 })
 
