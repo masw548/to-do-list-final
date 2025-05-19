@@ -67,7 +67,7 @@ function showout() {
 
         
         let fullNote = document.createElement('div') 
-        fullNote.classList.add('newnote','text-break')
+        fullNote.classList.add('newnote')
         fullNote.appendChild(bodyOfNote)
         fullNote.append(bottomBox)
 
