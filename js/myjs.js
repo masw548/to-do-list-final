@@ -3,7 +3,7 @@ let input = document.getElementById('noteInput')
 let btnSave = document.getElementById('addNoteBtn')
 let seartchInput = document.getElementById('searchInput')
 let output = document.getElementById('notesList')
-// get arr from storage and create it if it not exist
+// get arr from storage and create it if it exist
 
 let x = localStorage.getItem('notes') || "[]";
 let parseNote = JSON.parse(x);
