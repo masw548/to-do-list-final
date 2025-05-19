@@ -19,8 +19,8 @@ function save() {
         localStorage.setItem('notes',JSON.stringify(arr))
         showout()
     }
-    input.value = ''
-    input.style.height = '50px';
+    input.value = '';
+    
 }
 function showout() {
     output.innerHTML=''
@@ -102,6 +102,7 @@ function togglestatue(obj){
 // enter pressing
 input.addEventListener('keydown',(e)=>{
     if(e.key === 'Enter'){
+        this.style.height = '50px';
         save()
     }
 })
