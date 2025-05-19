@@ -17,6 +17,7 @@ function save() {
     if(note){
         arr.push({text : note, date : new Date().toLocaleString() , complete : false })
         localStorage.setItem('notes',JSON.stringify(arr))
+        // input.style.height = '50px'
         showout()
     }
     input.value = '';
@@ -102,12 +103,10 @@ function togglestatue(obj){
 // enter pressing
 input.addEventListener('keydown',(e)=>{
     if(e.key === 'Enter'){
-    textarea.style.height = "auto"; 
-    textarea.style.height = textarea.scrollHeight + "px"; 
-});
-
-        this.style.height = '50px';
-        save()
+    this.style.height = "auto"; 
+    this.style.height = this.scrollHeight + "px"; 
+    this.style.height = '50px';
+    save()
     }
 })
 // seartch note
